@@ -4,7 +4,7 @@ Claude skill pro srozumitelné, důkazně podložené bezpečnostní audity web�
 
 Bodyguard je určený hlavně pro lidi, kteří nejsou vývojáři/vývojářky, ale postavili si vlastní web nebo appku pomocí AI a chtějí vědět, jestli je bezpečné ji zveřejnit. Vysvětluje vše srozumitelnou češtinou, odděluje kontrolu kódu, služeb a živého nasazení, nikdy do reportu nevypíše celý nalezený klíč nebo heslo (jen typ a pár posledních znaků) a nikdy nevydává falešnou zelenou k nasazení bez důkazu.
 
-Víc o tom, jak a proč skill vznikl, najdeš v článku na [jaknaai.cz](https://jaknaai.cz).
+Víc o tom, jak a proč skill vznikl, najdeš v článku na [jaknaai.cz](https://jaknaai.cz/clanky/bodyguard).
 
 ## Co skill umí
 
