@@ -2,7 +2,7 @@
 
 Claude skill pro srozumitelné, důkazně podložené bezpečnostní audity webů a aplikací vytvořených pomocí AI nebo vibe codingu.
 
-Bodyguard je určený hlavně pro lidi, kteří nejsou vývojáři/vývojářky, ale postavili si vlastní web nebo appku pomocí AI a chtějí vědět, jestli je bezpečné ji zveřejnit. Vysvětluje vše srozumitelnou češtinou, odděluje kontrolu kódu, služeb a živého nasazení, maskuje nalezená tajemství a nikdy nevydává falešnou zelenou k nasazení bez důkazu.
+Bodyguard je určený hlavně pro lidi, kteří nejsou vývojáři/vývojářky, ale postavili si vlastní web nebo appku pomocí AI a chtějí vědět, jestli je bezpečné ji zveřejnit. Vysvětluje vše srozumitelnou češtinou, odděluje kontrolu kódu, služeb a živého nasazení, nikdy do reportu nevypíše celý nalezený klíč nebo heslo (jen typ a pár posledních znaků) a nikdy nevydává falešnou zelenou k nasazení bez důkazu.
 
 Víc o tom, jak a proč skill vznikl, najdeš v článku na [jaknaai.cz](https://jaknaai.cz).
 
@@ -10,7 +10,7 @@ Víc o tom, jak a proč skill vznikl, najdeš v článku na [jaknaai.cz](https:/
 
 - Kontroluje repozitář, složku projektu, nasazenou URL i související služby (GitHub, Supabase, Stripe, Vercel...).
 - Podporuje víc režimů: `quick` (před commitem), `release`/`launch` (před nasazením), `full` (podrobný audit), `services`, `verify` (ověření opravy), `incident` (reakce na únik) a `fix`.
-- Používá bezpečné read-only skripty, které nikdy nevypisují nalezené hodnoty tajemství — jen typ, umístění a maskovaný konec.
+- Používá bezpečné read-only skripty, které v reportu nikdy neukážou celou nalezenou hodnotu klíče nebo hesla — jen typ, umístění a pár posledních znaků.
 - Řídí se přísnými pravidly: bez souhlasu nic nenasazuje, nemaže, nerotuje klíče ani nespouští neznámý kód.
 - Vždy odděluje ověřené nálezy od podezření a neověřených oblastí — nikdy neřekne jen "je to bezpečné".
 
@@ -43,7 +43,7 @@ scripts/                     bezpečné read-only Python skripty (sken tajemstv�
 
 ## Bezpečnost
 
-Skript neinstaluje nic automaticky, nespouští projektový kód bez souhlasu a nikdy nevypisuje celé nalezené tajemství — jen typ a maskovanou hodnotu. Detailní pravidla jsou popsaná v `SKILL.md` v sekci "Neměnná bezpečnostní pravidla".
+Skript neinstaluje nic automaticky, nespouští projektový kód bez souhlasu a v reportu nikdy neukáže celý nalezený klíč nebo heslo — jen typ a pár posledních znaků, podobně jako banka na výpisu ukazuje jen poslední čtyři číslice karty. Detailní pravidla jsou popsaná v `SKILL.md` v sekci "Neměnná bezpečnostní pravidla".
 
 I tak platí: automatická kontrola nenahrazuje cílený penetrační test u vysoce citlivých nebo kritických projektů. Skill sám doporučuje, kdy je čas zavolat odborníka — viz `references/standards-and-escalation.md`.
 
