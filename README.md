@@ -16,9 +16,17 @@ Víc o tom, jak a proč skill vznikl, najdeš v článku na [jaknaai.cz](https:/
 
 ## Instalace
 
-1. Stáhni celý obsah tohoto repozitáře (nebo ho naklonuj: `git clone https://github.com/eliskavyhnankova/bodyguard-skill.git`).
-2. Zkopíruj celou složku do adresáře, kde Claude hledá skilly (podle toho, jestli používáš Claude Code, Claude Desktop nebo jiné rozhraní — postup se může lišit).
-3. Skill se jmenuje `bodyguard` podle názvu ve `SKILL.md`.
+Nemusíš umět nic technického ani řešit Git. Stačí těchto pět kroků v appce Claude (na webu i v desktopové aplikaci):
+
+1. **Stáhni zip soubor se skillem** — na [stránce s vydáním](https://github.com/eliskavyhnankova/bodyguard-skill/releases/latest) klikni na `bodyguard.zip`. Soubor se stáhne do tvého počítače, nemusíš ho rozbalovat.
+2. V Claudovi otevři **Nastavení** (ikonka ozubeného kola nebo tvoje jméno vlevo dole) a zkontroluj, že máš zapnuté **Code execution and file creation** (najdeš to v sekci **Capabilities**/Schopnosti). Bez toho skilly nefungují.
+3. Přejdi do **Customize** (Přizpůsobit) → **Skills** (Skilly).
+4. Klikni na tlačítko **+**, zvol **Create skill** a pak **Upload a skill**. Vyber stažený soubor `bodyguard.zip`.
+5. Jakmile se skill nahraje, objeví se v seznamu — přepni u něj **vypínač na zapnuto**. Hotovo, Bodyguard je aktivní.
+
+> Přesné názvy tlačítek se mohou trochu lišit podle verze appky, kterou používáš, ale postup (Nastavení → Skilly → nahrát) zůstává stejný.
+
+Radši bys skill nejdřív prošla/prošel? Otevři si `SKILL.md` a soubory ve složce `references/` přímo tady na GitHubu — je to obyčejný text, žádné programování.
 
 ## Jak ho použít
 
